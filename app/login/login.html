@@ -1,0 +1,21 @@
+       <div class="container">
+	   <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" >
+                <form [ngFormModel]="loginForm" role="form">
+                    <div class="form-group">
+                        <legend>Prijavljivanje</legend>
+                        <label for="">Korisničko ime</label>
+                        <input name="k_ime" type="text" class="form-control" ngControl='k_ime' placeholder="Unesite korisničko ime" required/>
+                        <label for="">Lozinka</label>
+                        <input name="lozinka" type="password" class="form-control" ngControl='lozinka' placeholder="Unesite lozinku" required/>
+                        <br>
+                        <button (click)="onLogin()" class="btn btn-primary">Potvrdi</button>
+                    </div>	                
+                </form>
+            </div>
+        </div>
+</div>
+	

@@ -1,0 +1,24 @@
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" >
+                <form [ngFormModel]="registerForm" role="form">
+                    <div class="form-group">
+                        <legend>Registracija korisnika</legend>
+                        <label for="">Korisničko ime</label>
+                        <input name="k_ime" type="text" class="form-control" ngControl='k_ime' placeholder="Unesite korisničko ime">
+                        <label for="">Lozinka</label>
+                        <input name="lozinka" type="password" class="form-control" ngControl='lozinka' placeholder="Unesite lozinku">
+                        <label for="">Ime</label>
+                        <input name="ime" type="text" class="form-control" ngControl='ime' placeholder="Unesite vase Ime ovde">
+                        <label for="">Prezime</label>
+                        <input name="prezime" type="text" class="form-control" ngControl='prezime' placeholder="Unesite vase Prezime ovde">
+                        <label for="">Email</label>
+                        <input name="email" type="text" class="form-control" ngControl='email' placeholder="Unesite vas email ovde">
+						<br>
+                        <button (click)="onRegister()" name="submit" type="submit" class="btn btn-primary">Potvrdi</button>
+                    </div>	
+				</form>
+            </div>
+        </div>

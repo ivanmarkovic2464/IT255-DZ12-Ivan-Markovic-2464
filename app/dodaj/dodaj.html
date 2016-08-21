@@ -1,0 +1,22 @@
+ <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2" >
+                <form [ngFormModel]="addForm" role="form">
+                    <div class="form-group">
+                        <legend>Dodavanje sobe</legend>
+                        <label for="">Tip sobe</label>
+                        <input type="text" class="form-control" ngControl='tipSobe' placeholder="Unesite tip sobe">
+                        <label for="">Kvadratura (samo broj kvadrata)</label>
+                        <input type="text" class="form-control" ngControl='kvadrata' placeholder="Unesite kvadraturu">
+                        <label for="">Broj kreveta</label>
+                        <input type="text" class="form-control" ngControl='brojKreveta' placeholder="Unesite broj kreveta">
+                        <label for="">Pogled na</label>
+                        <input type="text" class="form-control" ngControl='pogledNa' placeholder="Unesite pogled">
+						<br>
+                        <button (click)="onAdd()" name="submit" type="submit" class="btn btn-primary">Dodaj</button>
+                    </div>	
+				</form>
+            </div>
+        </div>

@@ -1,0 +1,40 @@
+<br>
+<div class="col-md-3" style="background-color: hsla(349, 94%, 34%, 0.96); color: #fff;">
+<form class="navbar-form navbar-left" role="search">
+ <div class="form-group">
+	<input type="text" class="form-control" placeholder="Broj kreveta" [(ngModel)]="brojKreveta">
+ </div>
+</form>
+ 
+ <form class="navbar-form navbar-left" role="search">
+	<input type="text" class="form-control" placeholder="Kvadratura sobe" [(ngModel)]="kvadrata">
+</form>
+</div>
+
+
+<div class="col-md-12">
+
+<form class="navbar-form navbar-left" role="search">
+<div style="color:hsla(360, 100%, 36%, 1); font-size:20px;">
+<br>Sobe: <br> <br>
+</div>
+<div *ngFor="#soba of rooms| SearchPipe2: kvadrata | SearchPipe: brojKreveta">
+<div class="jumbotron"  style="padding:5px 5px 5px 5px; width:200px; height:200px; font-size:14px;background-color:hsla(349, 94%, 34%, 0.20); color:hsla(360, 100%, 36%, 1);">
+<br>
+Broj sobe: {{soba.id}}
+<br>
+Tip sobe: {{soba.tipSobe}}
+<br>
+Kvadrata: {{soba.kvadrata}}
+<br>
+Broj kreveta: {{soba.brojKreveta}}
+<br>
+Pogled na: {{soba.pogledNa}}
+<br>
+</div>
+<hr>
+
+</div>
+</form>
+
+</div>
